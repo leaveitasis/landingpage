@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leave It As Is — Sell your house exactly as it is</title>
+<meta name="description" content="We buy single-family homes directly, in as-is condition. No repairs, no staging, no clean-out. Chicago's North Shore and northern suburbs.">
+<meta name="theme-color" content="#F4F1EA">
+<meta property="og:title" content="Leave It As Is — Sell your house exactly as it is">
+<meta property="og:description" content="We buy single-family homes directly, in as-is condition. No repairs, no staging, no clean-out.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;--ox:#7B3B34}
+body{margin:0;background:#F4F1EA;color:#1A1A1A;font-family:Archivo,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty;overflow-x:hidden}
+::selection{background:#7B3B34;color:#F4F1EA}
+a{color:#1A1A1A;text-decoration:none}
+a:hover{color:#7B3B34}
+h1,h2,h3,p,ul,li,figure,fieldset,legend{margin:0}
+img{max-width:100%}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mqr{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.btn{position:relative;display:inline-block;overflow:hidden;isolation:isolate;background:#1A1A1A;color:#F4F1EA;padding:17px 32px;font-family:Archivo,Helvetica,Arial,sans-serif;font-size:12px;font-weight:500;letter-spacing:.19em;text-transform:uppercase;border:0;cursor:pointer}
+.btn:hover{color:#F4F1EA}
+.btn .fill{position:absolute;inset:0;background:var(--ox);transform:scaleX(0);transform-origin:0 50%;transition:transform .55s cubic-bezier(.22,.61,.36,1);z-index:-1}
+.btn:hover .fill{transform:scaleX(1)}
+.hdrlink:hover{color:var(--ox)}
+.chip{padding:11px 18px;border:1px solid rgba(244,241,234,.24);font-size:15px;color:rgba(244,241,234,.86);transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1),background .35s ease,color .35s ease,border-color .35s ease}
+.chip:hover{background:#C4796A;border-color:#C4796A;color:#1A1A1A}
+.fitrow{transition:opacity .7s ease,padding-left .45s cubic-bezier(.22,.61,.36,1);border-top:1px solid rgba(26,26,26,.16);padding:clamp(13px,1.5vw,17px) 0;display:flex;align-items:baseline;gap:clamp(14px,2vw,26px)}
+.fitrow:hover{padding-left:12px}
+.fitrow .n{flex:0 0 26px;font-size:11px;letter-spacing:.14em;color:var(--ox);opacity:.65}
+.fitrow .t{font-size:clamp(17px,1.5vw,20px);line-height:1.4}
+.inp{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(26,26,26,.3);border-radius:0;padding:9px 0 11px;font-family:Archivo,Helvetica,Arial,sans-serif;font-size:17px;color:#1A1A1A;outline:none;transition:border-color .35s ease,box-shadow .35s ease}
+.inp:focus{border-bottom-color:var(--ox);box-shadow:0 1px 0 0 var(--ox)}
+.lbl{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(26,26,26,.55);margin-bottom:7px}
+.radio{display:inline-flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid rgba(26,26,26,.22);cursor:pointer;font-size:15px;color:rgba(26,26,26,.75);transition:border-color .3s ease,color .3s ease}
+.radio:hover{border-color:var(--ox);color:#1A1A1A}
+.radio input{accent-color:#7B3B34;margin:0}
+.link-ox{color:var(--ox);border-bottom:1px solid rgba(123,59,52,.4)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s cubic-bezier(.22,.61,.36,1),transform .8s cubic-bezier(.22,.61,.36,1)}
+.rv.on{opacity:1;transform:none}
+.line{display:block;transform:translateY(110%);transition:transform 1s cubic-bezier(.16,.84,.3,1)}
+.line.on{transform:none}
+.mask{display:block;overflow:hidden;padding-bottom:.04em}
+.strike{position:absolute;left:-2px;right:-2px;top:54%;height:2px;background:var(--ox);transform:scaleX(0);transform-origin:0 50%;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+.strike.on{transform:scaleX(1)}
+.skipword{position:relative;display:inline-block;width:max-content;font-family:'Playfair Display',Georgia,serif;font-size:clamp(26px,3.4vw,44px);line-height:1.24;color:rgba(26,26,26,.5)}
+.step{padding:clamp(22px,3vw,34px) 0;border-top:1px solid rgba(26,26,26,.16);opacity:.34;transition:opacity .6s ease}
+.step h3{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(23px,2.4vw,32px);line-height:1.2}
+.step p{margin-top:8px;font-size:17px;line-height:1.6;color:rgba(26,26,26,.72);max-width:52ch}
+.card-li{display:flex;gap:11px;font-size:16px;line-height:1.5}
+h2.sec{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(28px,4vw,52px);line-height:1.06;letter-spacing:-.02em}
+@media (max-width:900px){#rail{display:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv,.line,.strike{transition:none}}
+</style>
+</head>
+<body>
+<div style="position:relative;background:#F4F1EA">
+
+<div id="rail" aria-hidden="true" style="display:none;position:fixed;left:clamp(16px,3vw,52px);top:50%;transform:translateY(-50%);z-index:60">
+<div style="position:relative;display:grid;gap:24px">
+<div style="position:absolute;left:5px;top:5px;bottom:5px;width:1px;background:rgba(26,26,26,.2)"></div>
+<div id="railfill" style="position:absolute;left:5px;top:5px;width:1px;height:0;background:var(--ox)"></div>
+<a href="#s0" data-rail="s0" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Start</span></a>
+<a href="#s1" data-rail="s1" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">The idea</span></a>
+<a href="#s2" data-rail="s2" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">How it works</span></a>
+<a href="#s3" data-rail="s3" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Why people call</span></a>
+<a href="#s4" data-rail="s4" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Your house</span></a>
+<a href="#s5" data-rail="s5" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Compare</span></a>
+<a href="#s6" data-rail="s6" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Where we buy</span></a>
+<a href="#s7" data-rail="s7" style="position:relative;display:flex;align-items:center;gap:14px"><span data-dot style="flex:0 0 auto;width:11px;height:11px;border:1px solid rgba(26,26,26,.35);background:#F4F1EA;transform:rotate(45deg) scale(.72);transition:transform .5s cubic-bezier(.22,.61,.36,1),background .4s ease,border-color .4s ease"></span><span data-txt style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4);opacity:0;transform:translateX(-8px);transition:opacity .45s ease,transform .45s cubic-bezier(.22,.61,.36,1),color .4s ease;white-space:nowrap">Talk to us</span></a>
+</div>
+</div>
+
+<header style="position:sticky;top:0;z-index:70;background:rgba(244,241,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,26,26,.14)">
+<div id="bar" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--ox);transform:scaleX(0);transform-origin:0 50%;will-change:transform"></div>
+<div style="max-width:1240px;margin:0 auto;padding:16px clamp(20px,5vw,72px);display:flex;align-items:center;justify-content:space-between;gap:20px">
+<a href="#s0" style="font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase">Leave It As Is</a>
+<a href="#s7" class="hdrlink" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.62)">Talk to us <span style="display:inline-block;width:6px;height:6px;background:var(--ox);transform:rotate(45deg)"></span></a>
+</div>
+</header>
+
+<main>
+
+<section id="s0" data-sec="s0" data-tone="light" style="max-width:1240px;margin:0 auto;padding:clamp(48px,8vw,110px) clamp(20px,5vw,72px) clamp(40px,6vw,80px);position:relative">
+<p class="rv" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ox)">Chicago North Shore · Direct home purchase</p>
+<h1 style="margin-top:clamp(18px,2.4vw,28px);font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(40px,7.4vw,104px);line-height:.98;letter-spacing:-.03em;max-width:13ch">
+<span class="mask"><span class="line">Sell your house</span></span>
+<span class="mask"><span class="line" data-d="90">exactly as it is.</span></span>
+</h1>
+<div style="margin-top:clamp(26px,3.4vw,44px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,72px)">
+<div style="flex:1 1 340px;max-width:46ch">
+<p class="rv" data-d="380" style="font-size:clamp(18px,1.5vw,21px);line-height:1.55;color:rgba(26,26,26,.82)">We buy homes that need work, directly from the owner. You don't fix anything, clean anything, or show it to anyone.</p>
+<div class="rv" data-d="470" style="margin-top:clamp(24px,3vw,34px);display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+<a href="#s7" class="btn"><span class="fill"></span>Tell us about your house</a>
+<span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.42)">Free · No obligation</span>
+</div>
+</div>
+<div style="flex:1 1 320px;max-width:24ch">
+<p class="rv" data-d="520" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4)">What you skip</p>
+<div style="margin-top:14px;display:grid;gap:2px">
+<span class="skipword">Repairs<i class="strike"></i></span>
+<span class="skipword">Renovation<i class="strike"></i></span>
+<span class="skipword">Staging<i class="strike"></i></span>
+<span class="skipword">Showings<i class="strike"></i></span>
+<span class="skipword">Clean-out<i class="strike"></i></span>
+<span style="display:inline-block;width:max-content;font-family:'Playfair Display',Georgia,serif;font-size:clamp(26px,3.4vw,44px);line-height:1.24;color:#1A1A1A">We pay the closing cost</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="s1" data-sec="s1" data-tone="light" style="border-top:1px solid rgba(26,26,26,.14);background:#EDE7DA">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(46px,6vw,92px) clamp(20px,5vw,72px)">
+<h2 class="rv sec" style="max-width:16ch;line-height:1.08">The whole idea, in three lines.</h2>
+<div style="margin-top:clamp(30px,4vw,52px);display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,44px)">
+<div class="rv" style="flex:1 1 260px;padding-top:20px;border-top:1px solid rgba(26,26,26,.22)">
+<p style="font-family:'Playfair Display',Georgia,serif;font-size:34px;line-height:1;color:var(--ox)">1</p>
+<p style="margin-top:14px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,2vw,27px);line-height:1.25">We buy it in its current condition.</p>
+<p style="margin-top:10px;font-size:16px;line-height:1.6;color:rgba(26,26,26,.66)">Old kitchen, bad roof, forty years of deferred maintenance. That's the kind of house we're looking for.</p>
+</div>
+<div class="rv" data-d="110" style="flex:1 1 260px;padding-top:20px;border-top:1px solid rgba(26,26,26,.22)">
+<p style="font-family:'Playfair Display',Georgia,serif;font-size:34px;line-height:1;color:var(--ox)">2</p>
+<p style="margin-top:14px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,2vw,27px);line-height:1.25">Take what you want. Leave the rest.</p>
+<p style="margin-top:10px;font-size:16px;line-height:1.6;color:rgba(26,26,26,.66)">Furniture, boxes, whatever's in the basement — as agreed, it can stay. You never have to empty the house.</p>
+</div>
+<div class="rv" data-d="220" style="flex:1 1 260px;padding-top:20px;border-top:1px solid rgba(26,26,26,.22)">
+<p style="font-family:'Playfair Display',Georgia,serif;font-size:34px;line-height:1;color:var(--ox)">3</p>
+<p style="margin-top:14px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(21px,2vw,27px);line-height:1.25">You choose the closing date.</p>
+<p style="margin-top:10px;font-size:16px;line-height:1.6;color:rgba(26,26,26,.66)">Quickly if you need it. Months out if that's easier. We work around your schedule.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="s2" data-sec="s2" data-tone="light" style="border-top:1px solid rgba(26,26,26,.14)">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(46px,6vw,92px) clamp(20px,5vw,72px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,72px)">
+<div style="flex:1 1 240px;position:sticky;top:104px;align-self:start">
+<p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.4)">How it works</p>
+<p id="stepnum" style="margin-top:10px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(72px,11vw,150px);line-height:.86;letter-spacing:-.04em;color:var(--ox);transition:opacity .28s ease,transform .38s cubic-bezier(.22,.61,.36,1)">01</p>
+<p id="steplabel" style="margin-top:22px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(19px,1.8vw,24px);line-height:1.3;color:rgba(26,26,26,.68);max-width:14ch;transition:opacity .28s ease">Tell us about the house</p>
+<div style="margin-top:22px;width:100%;max-width:180px;height:2px;background:rgba(26,26,26,.14)"><div id="steptrack" style="height:2px;width:20%;background:var(--ox);transition:width .45s cubic-bezier(.22,.61,.36,1)"></div></div>
+</div>
+<div style="flex:3 1 460px">
+<div class="step" data-n="01" data-label="Tell us about the house">
+<h3>Tell us about the house</h3>
+<p>The address and a few basics. Two minutes, one form. No photos, no estimates, nothing to prepare.</p>
+</div>
+<div class="step" data-n="02" data-label="We come and look">
+<h3>We come and look</h3>
+<p>If it looks like a fit, we set up one walkthrough. You don't need to tidy up for us.</p>
+</div>
+<div class="step" data-n="03" data-label="We make an offer">
+<h3>We make an offer</h3>
+<p>In writing, based on the house as it stands today. You're free to say no.</p>
+</div>
+<div class="step" data-n="04" data-label="You pick the date">
+<h3>You pick the date</h3>
+<p>Need to be out fast? When the property and circumstances allow, we can move quickly. Need more time? We'll wait.</p>
+</div>
+<div class="step" data-n="05" data-label="Leave it as is" style="border-bottom:1px solid rgba(26,26,26,.16)">
+<h3>Leave it as is</h3>
+<p>Take what matters to you and walk away. We handle everything that's left.</p>
+</div>
+<div class="rv" style="margin-top:clamp(26px,3vw,38px)">
+<a href="#s7" class="btn"><span class="fill"></span>Start with step one</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="s3" data-sec="s3" data-tone="dark" style="background:#1A1A1A;color:#F4F1EA;overflow:hidden">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,110px) clamp(20px,5vw,72px);display:flex;flex-wrap:wrap;gap:clamp(28px,4.5vw,64px);align-items:center">
+<div style="flex:1 1 480px;min-width:0">
+<p class="rv" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,241,234,.42)">Why people call</p>
+<blockquote data-par="0.05" style="margin:clamp(20px,3vw,34px) 0 0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(30px,5.6vw,76px);line-height:1.06;letter-spacing:-.025em;max-width:15ch;color:#F4F1EA">
+<span class="mask"><span class="line">“I just don't want</span></span>
+<span class="mask"><span class="line" data-d="90">to deal with all</span></span>
+<span class="mask"><span class="line" data-d="180">of this.”</span></span>
+</blockquote>
+<div style="margin-top:clamp(18px,2vw,26px);display:flex;flex-direction:column;gap:clamp(16px,1.6vw,20px)">
+<p class="rv" data-d="300" style="max-width:52ch;font-size:clamp(17px,1.3vw,19px);line-height:1.6;color:rgba(244,241,234,.76)">Most people who call us aren't excited to move. Something changed, and the house became one more thing to manage. Usually it's one of these:</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;max-width:66ch">
+<span class="rv chip" data-d="340">An inherited house</span>
+<span class="rv chip" data-d="380">A move that happened fast</span>
+<span class="rv chip" data-d="420">Repairs that keep adding up</span>
+<span class="rv chip" data-d="460">A house too full to sort through</span>
+<span class="rv chip" data-d="500">Family or health changes</span>
+<span class="rv chip" data-d="540">Just done with it</span>
+</div>
+<p class="rv" data-d="580" style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,2vw,27px);line-height:1.35;color:#C4796A;max-width:30ch">No pressure, no pitch. Just one more option to weigh.</p>
+</div>
+</div>
+<figure class="rv" data-d="360" style="flex:0 1 clamp(320px,32vw,430px);display:flex;flex-direction:column;overflow:hidden">
+<img src="assets/house-exterior.png" alt="A two-story home with a red front door, bought in as-is condition" data-par="0.04" loading="lazy" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.72) brightness(.94);will-change:transform">
+</figure>
+</div>
+</section>
+
+<section id="s4" data-sec="s4" data-tone="light" style="border-top:1px solid rgba(26,26,26,.14)">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(46px,6vw,92px) clamp(20px,5vw,72px)">
+<div style="display:flex;flex-wrap:wrap;gap:clamp(18px,4vw,64px);align-items:flex-end;justify-content:space-between">
+<h2 class="rv sec" style="flex:1 1 320px;max-width:16ch">Does your house fit?</h2>
+<p class="rv" data-d="120" style="flex:1 1 300px;max-width:40ch;font-size:17px;line-height:1.6;color:rgba(26,26,26,.72)">We buy single-family homes that need work. If a couple of these sound like your house, it's worth a conversation.</p>
+</div>
+<div style="margin-top:clamp(30px,4vw,54px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,68px);align-items:flex-start">
+<div style="flex:2 1 440px">
+<div class="rv fitrow"><span class="n">01</span><span class="t">A kitchen or bathroom nobody has touched in decades</span></div>
+<div class="rv fitrow" data-d="60"><span class="n">02</span><span class="t">Repairs that have been put off for years</span></div>
+<div class="rv fitrow" data-d="110"><span class="n">03</span><span class="t">An old furnace, old wiring, old plumbing</span></div>
+<div class="rv fitrow" data-d="160"><span class="n">04</span><span class="t">Roof, siding or foundation trouble</span></div>
+<div class="rv fitrow" data-d="210"><span class="n">05</span><span class="t">Water or fire damage</span></div>
+<div class="rv fitrow" data-d="260"><span class="n">06</span><span class="t">A house you inherited and don't want to manage</span></div>
+<div class="rv fitrow" data-d="310"><span class="n">07</span><span class="t">Rooms still full of furniture and belongings</span></div>
+<div class="rv fitrow" data-d="360" style="border-bottom:1px solid rgba(26,26,26,.16)"><span class="n">08</span><span class="t">A house that simply isn't ready to list</span></div>
+<p class="rv" data-d="410" style="margin-top:clamp(20px,2.4vw,30px);font-family:'Playfair Display',Georgia,serif;font-size:clamp(19px,1.8vw,24px);line-height:1.4;max-width:38ch">Not sure it fits? <a href="#s7" class="link-ox">Ask us anyway</a> — we'll tell you straight.</p>
+</div>
+<figure class="rv" data-d="200" style="flex:1 1 270px;overflow:hidden">
+<img src="assets/interior-kitchen-before.png" alt="A dated kitchen before any work" data-par="0.04" loading="lazy" style="display:block;width:100%;aspect-ratio:3/4;object-fit:cover;filter:saturate(.78);will-change:transform">
+</figure>
+</div>
+</div>
+</section>
+
+<section id="s5" data-sec="s5" data-tone="light" style="background:#EDE7DA;border-top:1px solid rgba(26,26,26,.14)">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(46px,6vw,92px) clamp(20px,5vw,72px)">
+<h2 class="rv sec" style="max-width:18ch">Two ways to sell. Side by side.</h2>
+<div style="margin-top:clamp(28px,3.6vw,48px);display:flex;flex-wrap:wrap;gap:clamp(20px,3vw,40px)">
+<div class="rv" style="flex:1 1 300px;padding:clamp(22px,2.6vw,32px);background:rgba(244,241,234,.55);border:1px solid rgba(26,26,26,.16)">
+<p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(26,26,26,.45)">List it on the market</p>
+<p style="margin-top:12px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,1.9vw,25px);line-height:1.3;color:rgba(26,26,26,.8)">Best if you want the highest possible retail price and have the time.</p>
+<ul style="list-style:none;padding:0;margin:20px 0 0;display:grid;gap:11px">
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>Make the repairs first</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>Empty and clean the house</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>Stage it and photograph it</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>Showings and open houses</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>Wait, negotiate, hope it closes</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>You pay agent fees</li>
+<li class="card-li" style="color:rgba(26,26,26,.7)"><span style="color:rgba(26,26,26,.35)">—</span>You pay the closing costs</li>
+</ul>
+</div>
+<div class="rv" data-d="120" style="flex:1 1 300px;padding:clamp(22px,2.6vw,32px);background:#1A1A1A;color:#F4F1EA;border:1px solid #1A1A1A">
+<p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C4796A">Leave It As Is</p>
+<p style="margin-top:12px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,1.9vw,25px);line-height:1.3">Best if you want it simple, certain and over with.</p>
+<ul style="list-style:none;padding:0;margin:20px 0 0;display:grid;gap:11px">
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>Tell us about the house</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>One walkthrough, no prep</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>A written offer, no obligation</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>Your closing date</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>Leave what you don't want</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>No agent fees</li>
+<li class="card-li" style="color:rgba(244,241,234,.86)"><span style="color:#C4796A">—</span>No closing costs</li>
+</ul>
+</div>
+</div>
+<p class="rv" data-d="200" style="margin-top:clamp(22px,2.6vw,32px);max-width:58ch;font-size:16.5px;line-height:1.6;color:rgba(26,26,26,.66)">We're not going to tell you one is always better. We'd just like to see whether ours makes sense for you.</p>
+</div>
+</section>
+
+<section id="s6" data-sec="s6" data-tone="light" style="border-top:1px solid rgba(26,26,26,.14);overflow:hidden">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(46px,6vw,86px) clamp(20px,5vw,72px) clamp(26px,3vw,40px)">
+<p class="rv" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(26,26,26,.42)">Where we buy</p>
+<h2 class="rv sec" data-d="80" style="margin-top:14px;max-width:20ch">The North Shore and the northwest suburbs.</h2>
+<p class="rv" data-d="140" style="margin-top:16px;max-width:50ch;font-size:17px;line-height:1.6;color:rgba(26,26,26,.72)">We live and work here. A house that needs renovation doesn't scare us. It's what we're looking for.</p>
+</div>
+<div aria-hidden="true" style="padding-bottom:clamp(36px,4.6vw,68px);display:grid;gap:10px">
+<div style="display:flex;width:max-content;animation:mq 46s linear infinite">
+<div style="display:flex;gap:34px;padding-right:34px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,3.6vw,48px);line-height:1.2;color:rgba(26,26,26,.82);white-space:nowrap"><span>Northbrook</span><span style="color:var(--ox)">◆</span><span>Glenview</span><span style="color:var(--ox)">◆</span><span>Deerfield</span><span style="color:var(--ox)">◆</span><span>Highland Park</span><span style="color:var(--ox)">◆</span><span>Riverwoods</span><span style="color:var(--ox)">◆</span><span>Wilmette</span><span style="color:var(--ox)">◆</span></div>
+<div style="display:flex;gap:34px;padding-right:34px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,3.6vw,48px);line-height:1.2;color:rgba(26,26,26,.82);white-space:nowrap"><span>Northbrook</span><span style="color:var(--ox)">◆</span><span>Glenview</span><span style="color:var(--ox)">◆</span><span>Deerfield</span><span style="color:var(--ox)">◆</span><span>Highland Park</span><span style="color:var(--ox)">◆</span><span>Riverwoods</span><span style="color:var(--ox)">◆</span><span>Wilmette</span><span style="color:var(--ox)">◆</span></div>
+</div>
+<div style="display:flex;width:max-content;animation:mqr 52s linear infinite">
+<div style="display:flex;gap:34px;padding-right:34px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(24px,3vw,40px);line-height:1.2;color:rgba(26,26,26,.5);white-space:nowrap"><span>Winnetka</span><span>·</span><span>Glencoe</span><span>·</span><span>Buffalo Grove</span><span>·</span><span>Arlington Heights</span><span>·</span><span>Mount Prospect</span><span>·</span><span>Lake Zurich</span><span>·</span><span>Palatine</span><span>·</span></div>
+<div style="display:flex;gap:34px;padding-right:34px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:clamp(24px,3vw,40px);line-height:1.2;color:rgba(26,26,26,.5);white-space:nowrap"><span>Winnetka</span><span>·</span><span>Glencoe</span><span>·</span><span>Buffalo Grove</span><span>·</span><span>Arlington Heights</span><span>·</span><span>Mount Prospect</span><span>·</span><span>Lake Zurich</span><span>·</span><span>Palatine</span><span>·</span></div>
+</div>
+</div>
+</section>
+
+<section id="s7" data-sec="s7" data-tone="light" style="background:#EDE7DA;border-top:1px solid rgba(26,26,26,.14);scroll-margin-top:8px">
+<div style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,96px) clamp(20px,5vw,72px);display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,72px)">
+<div style="flex:1 1 260px;max-width:32ch">
+<h2 class="rv sec">Tell us about your house.</h2>
+<p class="rv" data-d="100" style="margin-top:18px;font-size:17px;line-height:1.6;color:rgba(26,26,26,.72)">Four fields. No estimates, no photos, nothing to prepare. We'll come back to you with next steps, or tell you straight if it isn't a fit.</p>
+<p class="rv" data-d="160" style="margin-top:20px;font-size:16px;line-height:1.6;color:rgba(26,26,26,.6)">Prefer email? <a href="mailto:contact@leaveitasis.com" class="link-ox">contact@leaveitasis.com</a></p>
+</div>
+<div style="flex:2 1 420px">
+<form id="leadform" class="rv">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(18px,2.4vw,30px)">
+<label style="display:block;grid-column:1/-1"><span class="lbl">Property address *</span><input class="inp" type="text" name="property_address" required autocomplete="street-address"></label>
+<label style="display:block"><span class="lbl">Your name *</span><input class="inp" type="text" name="name" required autocomplete="name"></label>
+<label style="display:block"><span class="lbl">Phone *</span><input class="inp" type="tel" name="phone" required autocomplete="tel"></label>
+<label style="display:block;grid-column:1/-1"><span class="lbl">Email *</span><input class="inp" type="email" name="email" required autocomplete="email"></label>
+<label style="display:block;grid-column:1/-1"><span class="lbl">Anything we should know? (optional)</span><textarea class="inp" name="property_details" rows="3" placeholder="Condition, contents, timing. A sentence is plenty." style="line-height:1.55;resize:vertical;min-height:80px"></textarea></label>
+</div>
+<fieldset style="border:0;padding:0;margin:clamp(24px,3vw,34px) 0 0">
+<legend style="padding:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(26,26,26,.55)">How soon are you hoping to sell? (optional)</legend>
+<div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:10px">
+<label class="radio"><input type="radio" name="sell_timeline" value="As soon as possible">As soon as possible</label>
+<label class="radio"><input type="radio" name="sell_timeline" value="Within 30 days">Within 30 days</label>
+<label class="radio"><input type="radio" name="sell_timeline" value="Within 1-3 months">1–3 months</label>
+<label class="radio"><input type="radio" name="sell_timeline" value="I'm flexible">I'm flexible</label>
+<label class="radio"><input type="radio" name="sell_timeline" value="Just exploring">Just exploring</label>
+</div>
+</fieldset>
+<div style="margin-top:clamp(24px,3vw,36px);display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+<button type="submit" class="btn"><span class="fill"></span>Send it over</button>
+<span id="sending" hidden style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ox)">Sending…</span>
+</div>
+<p style="margin-top:18px;max-width:48ch;font-size:13px;line-height:1.6;color:rgba(26,26,26,.5)">Sending this doesn't obligate you to sell, or us to make an offer.</p>
+<p id="formerr" hidden style="margin-top:16px;max-width:50ch;padding-left:16px;border-left:2px solid var(--ox);font-size:15.5px;line-height:1.6;color:var(--ox)"></p>
+</form>
+<div id="thanks" hidden style="max-width:50ch;padding-left:24px;border-left:2px solid var(--ox)">
+<p style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,2.2vw,30px);line-height:1.25">Thank you. We've got your details and we'll be in touch shortly.</p>
+<p style="margin-top:12px;font-size:16px;line-height:1.6;color:rgba(26,26,26,.62)">If it's easier, reach us any time at <a href="mailto:contact@leaveitasis.com" class="link-ox">contact@leaveitasis.com</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background:#1A1A1A;color:#F4F1EA;overflow:hidden">
+<div style="padding:clamp(40px,5vw,72px) 0 0">
+<h2 id="wordmark" style="font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(46px,12vw,180px);line-height:.92;letter-spacing:-.04em;white-space:nowrap;text-align:center;color:#F4F1EA;will-change:transform">Leave It As Is</h2>
+</div>
+<div style="max-width:1240px;margin:clamp(26px,3vw,44px) auto 0;padding:clamp(26px,3vw,44px) clamp(20px,5vw,72px) clamp(34px,4vw,56px);display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,64px);justify-content:space-between;border-top:1px solid rgba(244,241,234,.16)">
+<div style="flex:1 1 240px;display:grid;gap:5px;font-size:15.5px;line-height:1.6;color:rgba(244,241,234,.72)">
+<p style="font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:20px;color:#C4796A">As is. And done.</p>
+<p style="margin-top:8px">Chicago North Shore</p>
+<p>Northern &amp; northwest suburbs</p>
+<p><a href="mailto:contact@leaveitasis.com" style="color:#F4F1EA;border-bottom:1px solid rgba(196,121,106,.6)">contact@leaveitasis.com</a></p>
+</div>
+<div style="flex:1 1 300px;display:grid;gap:16px;align-content:start">
+<p style="max-width:62ch;font-size:12.5px;line-height:1.65;color:rgba(244,241,234,.45)">Disclosure: [Final Illinois real-estate license disclosure to be inserted after confirmation with sponsoring broker / attorney.]</p>
+<div style="display:flex;gap:24px;flex-wrap:wrap">
+<a href="#" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,241,234,.6);border-bottom:1px solid rgba(196,121,106,.5)">Privacy policy</a>
+<a href="#" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,241,234,.6);border-bottom:1px solid rgba(196,121,106,.5)">Terms of use</a>
+</div>
+</div>
+</div>
+</footer>
+
+<div aria-hidden="true" style="position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.05;mix-blend-mode:multiply;background-image:url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>&quot;)"></div>
+
+</div>
+
+<script>
+(function () {
+  // ---- CONFIG: paste your Web3Forms access key here (free at web3forms.com) ----
+  var ACCESS_KEY = 'a2fe62d3-2a36-4716-8ab7-f807a214b3ed';
+
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* reveal on scroll */
+  var revealEls = document.querySelectorAll('.rv, .line, .strike');
+  var sIdx = 0;
+  Array.prototype.forEach.call(document.querySelectorAll('.strike'), function (el) {
+    el.dataset.d = String(700 + sIdx * 150); sIdx++;
+  });
+  function show(el) {
+    if (el.dataset.shown) return;
+    el.dataset.shown = '1';
+    el.style.transitionDelay = (reduced ? 0 : parseInt(el.dataset.d || '0', 10)) + 'ms';
+    el.classList.add('on');
+  }
+  if (reduced || !('IntersectionObserver' in window)) {
+    Array.prototype.forEach.call(revealEls, show);
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (x) { if (x.isIntersecting) { show(x.target); io.unobserve(x.target); } });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    Array.prototype.forEach.call(revealEls, function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.94 && r.bottom > 0) show(el); else io.observe(el);
+    });
+    setTimeout(function () { Array.prototype.forEach.call(revealEls, show); }, 6000);
+  }
+
+  var rail = document.getElementById('rail');
+  var bar = document.getElementById('bar');
+  var railfill = document.getElementById('railfill');
+  var steps = document.querySelectorAll('.step');
+  var stepnum = document.getElementById('stepnum');
+  var steplabel = document.getElementById('steplabel');
+  var steptrack = document.getElementById('steptrack');
+  var wordmark = document.getElementById('wordmark');
+  var curStep = null, curSec = null, ticking = false;
+
+  function onResize() {
+    if (rail) {
+      var gutter = Math.max(0, (window.innerWidth - 1240) / 2) + Math.min(72, Math.max(20, window.innerWidth * 0.05));
+      var railLeft = Math.min(52, Math.max(16, window.innerWidth * 0.03));
+      rail.style.display = (gutter - railLeft > 160) ? 'block' : 'none';
+    }
+    onScroll();
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      ticking = false;
+      var doc = document.documentElement;
+      var y = window.pageYOffset || doc.scrollTop;
+      var h = (doc.scrollHeight - window.innerHeight) || 1;
+      var p = Math.min(1, Math.max(0, y / h));
+      if (bar) bar.style.transform = 'scaleX(' + p + ')';
+      if (railfill) railfill.style.height = (p * 100) + '%';
+
+      var active = null;
+      Array.prototype.forEach.call(document.querySelectorAll('[data-sec]'), function (s) {
+        var r = s.getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.42 && r.bottom > window.innerHeight * 0.28) active = s;
+      });
+      if (active && active.id !== curSec) {
+        curSec = active.id;
+        var dark = active.getAttribute('data-tone') === 'dark';
+        Array.prototype.forEach.call(document.querySelectorAll('[data-rail]'), function (a) {
+          var on = a.getAttribute('data-rail') === active.id;
+          var dot = a.querySelector('[data-dot]'), txt = a.querySelector('[data-txt]');
+          if (dot) {
+            dot.style.background = on ? 'var(--ox)' : (dark ? '#1A1A1A' : '#F4F1EA');
+            dot.style.borderColor = on ? 'var(--ox)' : (dark ? 'rgba(244,241,234,.4)' : 'rgba(26,26,26,.35)');
+            dot.style.transform = on ? 'rotate(45deg) scale(1.15)' : 'rotate(45deg) scale(.72)';
+          }
+          if (txt) {
+            txt.style.opacity = on ? '1' : '0';
+            txt.style.transform = on ? 'none' : 'translateX(-8px)';
+            txt.style.color = on ? 'var(--ox)' : (dark ? 'rgba(244,241,234,.5)' : 'rgba(26,26,26,.4)');
+          }
+        });
+      }
+
+      if (!reduced) {
+        Array.prototype.forEach.call(document.querySelectorAll('[data-par]'), function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.bottom < -200 || r.top > window.innerHeight + 200) return;
+          var amt = parseFloat(el.getAttribute('data-par')) || 0;
+          var mid = r.top + r.height / 2 - window.innerHeight / 2;
+          el.style.transform = 'translateY(' + (-mid * amt).toFixed(2) + 'px)';
+        });
+        if (wordmark) {
+          var wr = wordmark.getBoundingClientRect();
+          if (wr.top < window.innerHeight && wr.bottom > 0) {
+            var t = 1 - (wr.top / window.innerHeight);
+            wordmark.style.transform = 'translateX(' + ((0.5 - t) * 90).toFixed(1) + 'px)';
+          }
+        }
+      }
+
+      if (steps.length) {
+        var focus = window.innerHeight * 0.42, cur = 0, best = Infinity;
+        Array.prototype.forEach.call(steps, function (s, i) {
+          var r = s.getBoundingClientRect();
+          var dist = Math.abs(r.top + r.height / 2 - focus);
+          if (dist < best) { best = dist; cur = i; }
+        });
+        Array.prototype.forEach.call(steps, function (s, i) { s.style.opacity = i === cur ? '1' : '.34'; });
+        if (cur !== curStep) {
+          curStep = cur;
+          var s = steps[cur];
+          if (stepnum) {
+            stepnum.style.opacity = '0'; stepnum.style.transform = 'translateY(-10px)';
+            setTimeout(function () {
+              stepnum.textContent = s.getAttribute('data-n');
+              stepnum.style.opacity = '1'; stepnum.style.transform = 'none';
+            }, 170);
+          }
+          if (steplabel) {
+            steplabel.style.opacity = '0';
+            setTimeout(function () { steplabel.textContent = s.getAttribute('data-label'); steplabel.style.opacity = '1'; }, 170);
+          }
+          if (steptrack) steptrack.style.width = (((cur + 1) / steps.length) * 100) + '%';
+        }
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onResize, { passive: true });
+  onResize();
+
+  /* form */
+  var form = document.getElementById('leadform');
+  var thanks = document.getElementById('thanks');
+  var sendingEl = document.getElementById('sending');
+  var errEl = document.getElementById('formerr');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = { access_key: ACCESS_KEY, subject: 'New Property Inquiry — Leave It As Is' };
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      sendingEl.hidden = false; errEl.hidden = true;
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { return r.ok && j.success; }); })
+        .then(function (ok) {
+          sendingEl.hidden = true;
+          if (!ok) throw new Error('failed');
+          form.hidden = true;
+          thanks.hidden = false;
+        })
+        .catch(function () {
+          sendingEl.hidden = true;
+          errEl.textContent = "Something went wrong sending your details. Please try again, or email us directly at contact@leaveitasis.com.";
+          errEl.hidden = false;
+        });
+    });
+  }
+})();
+</script>
+</body>
+</html>
